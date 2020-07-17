@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Layout from "../components/layout"
 import Header from "../components/header"
 
 export default function Covid() {
   return (
-    <div style={{ color: `#000000` }}>
+    <Layout>
       <Link
         to="/"
         style={{
@@ -38,6 +39,6 @@ export default function Covid() {
       <Header headerText="Coronavirus COVID-19 - " />
       <h1>Covid</h1>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    </Layout>
   )
 }
